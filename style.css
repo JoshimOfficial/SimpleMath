@@ -1,0 +1,53 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: teal;
+}
+.main{
+    border: 1px solid;
+    height: 500px;
+    width: 50%;
+    margin: auto;
+    margin-top: 55px;
+}
+h1 {
+    background: aqua;
+    margin: auto;
+    margin-top: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.numberBLock{
+    border: 1px solid red;
+    margin-top: 10px;
+    height: 35px;
+    display: flex;
+    justify-content: baseline;
+}
+
+.creatInputLargeNumber, .creatInputLowNumber{
+    outline: none;
+    height: 80%;
+    width: 30%;
+}
+
+.creatInputLowNumber{
+    
+    margin-left: 5%;
+    outline: none;
+}
+
+.sbmtBtn{
+    margin-left: 1%;
+    width: 31%;
+    text-align: center;
+}
+
+.userNumberList{
+    margin-top: 10px;
+}
+
+.summation{
+    margin-top: 10px;
+    height: 5%;
+}

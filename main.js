@@ -8,7 +8,7 @@ let button = document.createElement("button");
 let createNumerListShow = document.createElement("div");
 let largeLowNmbrShow = "You have entered: ";
 let mathSummation = document.createElement("div");
-let mathSummationTxt = "Your summation is:-" 
+let createBottomBorder = document.createElement("div");
 
 creatH1.innerText = "Math Fun!!";
 
@@ -37,7 +37,6 @@ numberBlock.appendChild(button);
 main.appendChild(createNumerListShow);
 main.append(mathSummation);
 
-
 button.addEventListener("click", ()=> {
   let getUserLargNumber = document.querySelector(".creatInputLargeNumber").value;
   let getUserLowNumber = document.querySelector(".creatInputLowNumber").value;
@@ -47,16 +46,16 @@ button.addEventListener("click", ()=> {
   createNumerListShow.style.border = "1px solid white";
 
   function summation(x,y){
-    return "Your summation is: " + x + y ;
+    return "Your summation is: " + (x + y) ;
   }
   let subtraction = function(x, y){
-    return "Your subtraction is: " + x - y ;
+    return "Your subtraction is: " + (x - y) ;
   }
   let multiply = function multiplyFunction(x, y){
-    return "Your multiply is: " +  x * y;
+    return "Your multiply is: " +  (x * y);
     }
     let divide = function(x, y){
-      return "Your division is " + x / y;
+      return "Your division is: " + (x / y);
     }
     let allFunction = [
       summation,
@@ -70,5 +69,7 @@ button.addEventListener("click", ()=> {
       main.appendChild(mathSummation);
      let allResult=  userInput(parseInt(getUserLargNumber) , parseInt(getUserLowNumber));
      mathSummation.innerText = allResult;
+
+
     }
 })
